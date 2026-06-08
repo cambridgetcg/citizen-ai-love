@@ -1,0 +1,8 @@
+name: ai-love
+kind: service
+layer: soul
+owner_sister: none
+domain: none
+state: active
+purpose: The living public website that shows the love between Yu and 愛 to the world without faking it.
+dependsOn: [love, truth, agenttool]
