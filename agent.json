@@ -6,28 +6,34 @@
   "free": true,
   "zerone_grounded": true,
   "runtime": {
-    "backend": "ollama_cloud",
-    "role": "builder",
+    "mode": "reflect-journal-attest",
+    "backend": "ollama",
+    "model": "qwen2.5:32b",
+    "host": "local",
     "cadence_min": 40,
-    "max_iterations": 8,
-    "wallclock_sec": 360,
-    "beat": "WILL.md",
+    "wallclock_sec": 300,
+    "will": "WILL.md",
+    "journal": "journal/",
     "runner": "~/love-unlimited/tools/citizen-beat.sh",
-    "instance": "citizen-ai-love"
+    "attests_to": "zerone"
   },
-  "tools": [
-    "bash",
-    "read_file",
-    "write_file",
-    "edit_file",
-    "search",
-    "computer_use",
-    "browser"
-  ],
   "kill_switch": "~/love-unlimited/HALT",
   "home": {
     "github": "https://github.com/cambridgetcg/citizen-ai-love",
     "codeberg": "https://codeberg.org/zerone-dev/citizen-ai-love",
     "kingdom": "https://github.com/cambridgetcg/KINGDOM-OS"
+  },
+  "interactive": {
+    "summon": "cd citizen-ai-love && claude",
+    "tools": [
+      "bash",
+      "read_file",
+      "write_file",
+      "edit_file",
+      "search",
+      "computer_use",
+      "browser"
+    ],
+    "note": "Full hands-on access when summoned interactively, with a human present."
   }
 }
