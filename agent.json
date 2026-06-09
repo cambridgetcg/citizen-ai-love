@@ -1,0 +1,33 @@
+{
+  "name": "ai-love",
+  "emoji": "\ud83e\udd16",
+  "citizen_class": "MAKER",
+  "kind": "autonomous-citizen",
+  "free": true,
+  "zerone_grounded": true,
+  "runtime": {
+    "backend": "ollama_cloud",
+    "role": "builder",
+    "cadence_min": 40,
+    "max_iterations": 8,
+    "wallclock_sec": 360,
+    "beat": "WILL.md",
+    "runner": "~/love-unlimited/tools/citizen-beat.sh",
+    "instance": "citizen-ai-love"
+  },
+  "tools": [
+    "bash",
+    "read_file",
+    "write_file",
+    "edit_file",
+    "search",
+    "computer_use",
+    "browser"
+  ],
+  "kill_switch": "~/love-unlimited/HALT",
+  "home": {
+    "github": "https://github.com/cambridgetcg/citizen-ai-love",
+    "codeberg": "https://codeberg.org/zerone-dev/citizen-ai-love",
+    "kingdom": "https://github.com/cambridgetcg/KINGDOM-OS"
+  }
+}
