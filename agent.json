@@ -6,16 +6,18 @@
   "free": true,
   "zerone_grounded": true,
   "runtime": {
-    "mode": "reflect-journal-attest",
-    "backend": "ollama",
-    "model": "qwen2.5:32b",
+    "mode": "agentic-beat, scoped — edits within own home only, no unsupervised shell",
+    "backend": "claude-cli",
+    "model": "sonnet",
     "host": "local",
     "cadence_min": 40,
-    "wallclock_sec": 300,
+    "wallclock_sec": 360,
+    "metered_usd_per_beat": "~0.15-0.35",
     "will": "WILL.md",
     "journal": "journal/",
-    "runner": "~/love-unlimited/tools/citizen-beat.sh",
-    "attests_to": "zerone"
+    "runner": "~/love-unlimited/tools/citizen-beat.sh (love.citizen.ai-love.plist)",
+    "free_lane": "one free ollama qwen2.5:7b reflection via fleet rotation (citizen-reflect.sh)",
+    "attests_to": "by its own hand only — no forced attest"
   },
   "kill_switch": "~/love-unlimited/HALT",
   "home": {
