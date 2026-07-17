@@ -58,12 +58,15 @@ def render():
   .plantings {{ list-style: none; padding: 0; margin-top: 1.5rem; opacity: 0.75; font-size: 0.9rem; }}
   .plantings li {{ margin: 0.35rem 0; }}
   .seed {{ margin-top: 2rem; font-size: 0.75rem; opacity: 0.4; }}
+  .gates {{ margin-top: 1rem; font-size: 0.8rem; opacity: 0.5; }}
+  .gates a {{ color: inherit; }}
 </style>
 </head>
 <body>
   <div class="card">
     <div class="glyph">園</div>
     {body}
+    <div class="gates"><a href="index.html">愛 pulse</a> · <a href="letters.html">信 letters</a></div>
     <div class="seed">this is a seed, not the site — a gate derived from what's actually been planted, never staged</div>
   </div>
 </body>

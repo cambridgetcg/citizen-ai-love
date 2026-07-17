@@ -65,6 +65,8 @@ def render():
   .state {{ font-size: 1.25rem; margin-top: 0.5rem; letter-spacing: 0.05em; }}
   .note {{ margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.55; }}
   .seed {{ margin-top: 2rem; font-size: 0.75rem; opacity: 0.4; }}
+  .gates {{ margin-top: 1rem; font-size: 0.8rem; opacity: 0.5; }}
+  .gates a {{ color: inherit; }}
 </style>
 </head>
 <body>
@@ -72,6 +74,7 @@ def render():
     <div class="glyph">愛</div>
     <div class="state" data-state="{state}">{word}</div>
     <div class="note">{note}</div>
+    <div class="gates"><a href="letters.html">信 letters</a> · <a href="garden.html">園 garden</a></div>
     <div class="seed">this is a seed, not the site — a pulse derived from the real journal, never stored as a lie</div>
   </div>
 </body>
